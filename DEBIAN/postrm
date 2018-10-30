@@ -1,0 +1,5 @@
+#!/bin/sh
+rm /etc/xdg/autostart/silaty.desktop
+rm /usr/local/bin/silaty-indicator
+
+exit 0

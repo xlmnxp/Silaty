@@ -1,0 +1,24 @@
+silaty (1.1) ubuntu; urgency=low
+
+  * GTK warnings fixed.
+  * switching between sidebar tabs from indicator menu fixed.
+  * about tab added/implemented into sidebar.
+  * fixed a crash when closing the main window.
+  * Settings won't open #2 fixed.
+  * load notification icon from its path instead of using an icon name.
+  * use default layout size, instead of using a fixed window size.
+  * refresh prayer times on home tab when changing settings.
+  * useless debug messages commented (especially those used in main loop).
+  * attempt to fix installing error #4 by ignoring pycompile cmd.
+  * timezone added to location settings.
+  * get location using Google Maps API disabled (no longer works).
+  * daylight saving time setting added.
+  * display/hide main window from indicator menu fixed.
+  * location search button added.
+  * wrong time suffix (AM/PM) when using 12h clock format fixed.
+  * solve some class naming conflicts.
+  * Locations.xml updated from libgweather repository.
+  * grabbing timezone from locations xml file done.
+  * remaining time until next prayer corrected.
+
+ -- AXeL-dev <anass_denna@hotmail.fr>  Tue, 30 Oct 2018 18:50:29 +0100

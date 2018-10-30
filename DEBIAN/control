@@ -1,0 +1,9 @@
+Package: silaty
+Version: 1.1
+Maintainer: AXeL-dev <anass_denna@hotmail.fr>
+Section: utils
+Homepage: https://github.com/AXeL-dev/Silaty
+Architecture: all
+Priority: optional
+Depends: python3, gir1.2-gtk-3.0, gir1.2-appindicator3-0.1, gir1.2-notify-0.7, gir1.2-gstreamer-1.0
+Description: A neat Prayer Time Reminder App. Simple and complete so no prayer is missed

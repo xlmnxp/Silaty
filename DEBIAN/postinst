@@ -1,0 +1,5 @@
+#!/bin/sh
+cp /usr/share/applications/silaty.desktop /etc/xdg/autostart/silaty.desktop
+ln -s /usr/share/silaty/silaty-indicator.py /usr/local/bin/silaty-indicator
+
+exit 0
