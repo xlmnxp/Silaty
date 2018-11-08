@@ -1,0 +1,28 @@
+#!/usr/bin/make -f
+
+clean:
+	rm -f -r debian/silaty
+	rm -f debian/files
+	rm -f debian/silaty.debhelper.log
+	rm -f debian/silaty.substvars
+
+build:
+	@# Do nothing
+
+binary:
+	mkdir -p debian/silaty
+	mkdir -p debian/silaty/usr/share
+	mkdir -p debian/silaty/usr/share/applications
+	mkdir -p debian/silaty/usr/share/icons
+	mkdir -p debian/silaty/usr/share/silaty
+	cp -r src/audio debian/silaty/usr/share/silaty
+	cp -r src/data debian/silaty/usr/share/silaty
+	cp -r src/icons debian/silaty/usr/share/silaty
+	cp src/*.py debian/silaty/usr/share/silaty
+	cp src/silaty.desktop debian/silaty/usr/share/applications
+	cp -r src/icons/hicolor debian/silaty/usr/share/icons
+	mkdir -p debian/silaty/usr/share/icons/hicolor/scalable/apps/
+	cp src/icons/hicolor/128x128/apps/silaty.svg debian/silaty/usr/share/icons/hicolor/scalable/apps/
+	dh_gencontrol
+	dh_installdeb
+	dh_builddeb
