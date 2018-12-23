@@ -7,5 +7,5 @@ Build-Depends: debhelper (>= 9)
 
 Package: silaty
 Architecture: all
-Depends: python3, gir1.2-gtk-3.0, gir1.2-appindicator3-0.1, gir1.2-notify-0.7, gir1.2-gstreamer-1.0
+Depends: python3, python-gi, gir1.2-gtk-3.0, gir1.2-appindicator3-0.1, gir1.2-notify-0.7, gir1.2-gstreamer-1.0
 Description: A neat Prayer Time Reminder App. Simple and complete so no prayer is missed

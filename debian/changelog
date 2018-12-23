@@ -1,3 +1,11 @@
+silaty (1.2) ubuntu; urgency=low
+
+  * Silaty unable to sync prayer times correctly !! #9 fixed.
+  * Hijri Date #8 fixed.
+  * update home title when stack changes.
+
+ -- AXeL-dev <anass_denna@hotmail.fr>  Tue, 23 Dec 2018 13:50:29 +0100
+
 silaty (1.1) ubuntu; urgency=low
 
   * GTK warnings fixed.
