@@ -3,11 +3,11 @@ Upstream-Name: Silaty
 Source: https://github.com/AXeL-dev/Silaty
 
 Files: *
-Copyright: Copyright 2018 AXeL-dev <anass_denna@hotmail.fr>
+Copyright: Copyright 2019 AXeL-dev <contact.axel.dev@gmail.com>
 License: GPL-3
 
 Files: debian/*
-Copyright: Copyright 2018 AXeL-dev <anass_denna@hotmail.fr>
+Copyright: Copyright 2019 AXeL-dev <contact.axel.dev@gmail.com>
 License: GPL-3
 
 License: GPL-3

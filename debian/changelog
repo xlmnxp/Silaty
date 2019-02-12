@@ -1,10 +1,17 @@
+silaty (1.3) ubuntu; urgency=low
+
+  * arabic language is now supported.
+  * app crash on KDE desktop fixed.
+
+ -- AXeL-dev <contact.axel.dev@gmail.com>  Tue, 12 Feb 2019 14:23:29 +0100
+
 silaty (1.2) ubuntu; urgency=low
 
   * Silaty unable to sync prayer times correctly !! #9 fixed.
   * Hijri Date #8 fixed.
   * update home title when stack changes.
 
- -- AXeL-dev <anass_denna@hotmail.fr>  Tue, 23 Dec 2018 13:50:29 +0100
+ -- AXeL-dev <contact.axel.dev@gmail.com>  Tue, 23 Dec 2018 13:50:29 +0100
 
 silaty (1.1) ubuntu; urgency=low
 
@@ -29,4 +36,4 @@ silaty (1.1) ubuntu; urgency=low
   * grabbing timezone from locations xml file done.
   * remaining time until next prayer corrected.
 
- -- AXeL-dev <anass_denna@hotmail.fr>  Tue, 30 Oct 2018 18:50:29 +0100
+ -- AXeL-dev <contact.axel.dev@gmail.com>  Tue, 30 Oct 2018 18:50:29 +0100
