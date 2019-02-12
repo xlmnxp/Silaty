@@ -9,11 +9,11 @@ A neat prayer reminder app in GTK
 
 ### Install using debian package
 
-Download the [package](https://github.com/AXeL-dev/Silaty/releases/download/v1.1/silaty_1.1_all.deb).
+Download the [package](https://github.com/AXeL-dev/Silaty/releases/download/v1.2/silaty_1.2_all.deb).
 
 Install it using apt or any similar tool:
 ```bash
-sudo apt install silaty_1.1_all.deb
+sudo apt install silaty_1.2_all.deb
 ```
 
 ### Install from source
@@ -47,6 +47,11 @@ sudo ./uninstall.sh
 ```
 
 ## Changelog
+
+### v1.3
+
+* arabic language is now supported.
+* app crash on KDE desktop fixed.
 
 ### v1.2
 
