@@ -63,21 +63,21 @@ class Prayertime(object):
 
     def shrouk_time(self):
         """Gets the time of shrouk."""
-        fmt = to_hrtime(self._shrouk)
+        fmt = to_hrtime(self._shrouk, True)
         if "00" in fmt:
             fmt = fmt.replace('00','12')
         return fmt
 
     def fajr_time(self):
         """Gets the time of fajr."""
-        fmt = to_hrtime(self._fajr)
+        fmt = to_hrtime(self._fajr, True)
         if "00" in fmt:
             fmt = fmt.replace('00','12')
         return fmt
 
     def zuhr_time(self):
         """Gets the time of zuhr."""
-        fmt = to_hrtime(self._zuhr)
+        fmt = to_hrtime(self._zuhr, True)
         if "00" in fmt:
             fmt = fmt.replace('00','12')
         return fmt
@@ -363,20 +363,27 @@ def fill_zeros(time):
     fill = lambda var: [var, '0'+var] [len(var) <2]
     return ':'.join(map(fill, time.split(':')))
 
-def to_hrtime(var):
+def to_hrtime(var, isAM=False):
     """var: double -> human readable string of format "%I:%M:%S %p" """
     time = ''
     hours = int(var) # cast var (initially a double) as an int
+    hours_mod = hours % 12
 
-    # If 12 <= hours < 24 or 24 <= hours < 36, it's afternoon, else morning
-    #print ('%s' % hours)
-    if (hours >= 12 and hours < 24) or (hours >= 24 and hours < 36):
-        zone = "PM"
+    # Check if time correspond to morning or afternoon
+    #print ('%s %s' % (hours, hours_mod))
+    if isAM:
+        if hours_mod > 1 and hours_mod < 12:
+            zone = "AM"
+        else:
+            zone = "PM"
     else:
-        zone = "AM"
+        zone = "PM"
 
     # This will give us the time from 0 to 12
-    time += str(hours%12)
+    if hours > 12:
+        time += str(hours_mod)
+    else:
+        time += str(hours)
     time += ":"
     var -= hours
 
