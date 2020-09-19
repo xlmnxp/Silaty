@@ -28,8 +28,8 @@ parts:
       - libpulse0
       - libglu1-mesa
       - freeglut3
-      - libgpm-dev
-      - libslang2-dev
+      - libgpm2
+      - libslang2
     python-packages:
       - setuptools
       - PyGObject
